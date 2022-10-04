@@ -25,7 +25,7 @@ public class BaseClass {
 		System.out.println("This application name is: "+driver.getTitle());
 	    System.out.println("Create my first automation project and apload it to GitHub");
 			
-		driver.quit();
+		//driver.quit();
 		
 		
 	
