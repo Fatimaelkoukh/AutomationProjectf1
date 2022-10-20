@@ -24,8 +24,20 @@ public class BaseClass {
 		//System.out.println(driver.getTitle());
 		System.out.println("This application name is: "+driver.getTitle());
 	    System.out.println("Create my first automation project and apload it to GitHub");
-			
+		
+	    
+	    driver.findElement(By.xpath("//a[@href='/cart']")).click();
+		//driver.findElement(By.linkText("Go Back")).click(); //this will take me back to the home page from the cart page
+		driver.findElement(By.partialLinkText("Go")).click();
+		driver.findElement(By.name("q")).sendKeys("iphone"); //Sends keys to the searchbox
+		//driver.findElement(By.cssSelector(".p-2 btn btn-outline-success")).click();
+		driver.findElement(By.xpath("//*[text()='Search']")).click();
+		driver.navigate().back(); //This takes to the previous page.
+		driver.navigate().refresh(); //This will click on the refresh button and refreshes the page. 
+		//driver.navigate().to("https://www.smarttechqa.com/"); //This is the same as the get method
 		//driver.quit();
+		//added comment for git pull
+		
 		
 		
 	
